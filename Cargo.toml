@@ -9,6 +9,11 @@ keywords = ["minecraft", "mc", "mcmodern"]
 categories = ["games"]
 license = "CC0-1.0"
 
+[features]
+default = ["BuzzyBees"]
+BuzzyBees = []
+NetherUpdate = []
+
 [dependencies]
 byteorder = { version = "1", features = ["i128"] }
 flate2 = "1"

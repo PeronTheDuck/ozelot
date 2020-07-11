@@ -133,6 +133,9 @@ pub use connection::Packet;
 use std::fmt;
 
 /// The protocol version supported by this version of ozelot
+#[cfg(feature = NetherUpdate)]
+pub const PROTOCOL_VERSION: i32 = 735;
+#[cfg(feature = BuzzyBees)]
 pub const PROTOCOL_VERSION: i32 = 578;
 
 /// This tracks which state of play the client is in. The value of this changes
